@@ -31,3 +31,7 @@ Algunos de los códigos CSS se reutilizan en otras páginas HTML, por ejemplo el
 color del background, footer...
 
 Los archivos JavaScript se han utilizado para facilitar la búsqueda de campeones, objetos y runas.
+
+
+
+**_Proyecto realizado por José Luis Cotán_**
