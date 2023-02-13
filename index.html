@@ -5,50 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LoLstats</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
 </head>
 
-<body class="body-index">
+<body class="bg-info">
     <header>
-        <div class="top-index">LoLstats</div>
-        <nav class="nav-index">
-            <div class="nav-left">
-                <img src="imagenes/LoL_icon.png" alt="Logo de League of Legends">
-                <a href="#" style="color:rgba(255, 255, 255, 0.425);">Inicio</a>
-                <a href="campeones.html">Campeones</a>
-                <a href="objetos.html">Objetos</a>
-                <a href="runas.html">Runas</a>
+        <div class="container-fluid bg-black fixed-top">
+            <div class="text-center text-white">
+                <h3 class="my-2">LoLstats</h3>
             </div>
-            <div class="nav-right">
-                <a href="login.html">Login</a>
-                <a href="registro.html">Registrarse</a>
-                <img src="imagenes/perfil.png" alt="Imagen de perfil">
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark mt-5">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="imagenes/LoL_icon.png" alt="Logo de League of Legends" width="40" height="40">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="campeones.html">Campeones</a>
+                        </li>
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="objetos.html">Objetos</a>
+                        </li>
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="runas.html">Runas</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="login.html">Login</a>
+                        </li>
+                        <li class="nav-item fs-2">
+                            <a class="nav-link" href="registro.html">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <img src="imagenes/perfil.png" alt="Imagen de perfil" width="40" height="40"
+                                    class="d-inline-block align-text-top">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
     </header>
     <main>
-        <div class="rankeds-image-login-container">
-            <img class="rankeds-image-login" src="imagenes/lol_rankeds.png"
-                alt="Imagen de rankeds en League of Legends">
-        </div>
-        <div class="center-input-login-container">
-            <input class="center-input-login">
-            <img class="garen-image-login" src="imagenes/garen.png" alt="Imagen de Garen en League of Legends">
+        <div class="container">
+            <div class="row">
+                <div class="d-flex justify-content-center flex-column align-items-center">
+                    <img class="rankeds-image-login mt-5 w-50" src="imagenes/lol_rankeds.png"
+                        alt="Imagen de rankeds en League of Legends">
+                    <div class="center-input-login-container mt-3">
+                        <input class="form-control" type="text">
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
-    <footer>
-        <div>
-            <p>Copyright &copy; 2023 LoLstats</p>
-            <a href="#">Discord</a>
-            <a href="#">FAQ</a>
-            <a href="#">Sobre nosotros</a>
-            <a href="#">Contacto</a>
-            <a href="#">Sugerencias</a>
-            <a href="#">Términos y condiciones</a>
-        </div>
-        <div class="logo">
-            <img src="imagenes/raton.png" alt="Logo de la página web">
-            <p>LoLstats</p>
+    <footer class="text-white fixed-bottom">
+        <div class="container d-flex justify-content-between align-items-center ">
+            <div class="ml-auto mr-3">
+                <p>Copyright &copy; 2023 LoLstats</p>
+                <a href="#" class="text-white">Discord</a>
+                <a href="#" class="text-white">FAQ</a>
+                <a href="#" class="text-white">Sobre nosotros</a>
+                <a href="#" class="text-white">Contacto</a>
+                <a href="#" class="text-white">Sugerencias</a>
+                <a href="#" class="text-white">Términos y condiciones</a>
+            </div>
+            <div class="col-1 col-md-3">
+                <img class="position-relative img-fluid w-25" src="imagenes/raton.png"
+                    alt="Logo de la página web">
+                <p>LoLstats</p>
+            </div>
         </div>
     </footer>
 </body>
