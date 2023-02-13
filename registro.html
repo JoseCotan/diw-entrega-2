@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body class="body-login">
+    <div class="contenedor-login">
+        <div class="central-login">
+            <div class="login">
+                <div class="imagen">
+                    <img class="raton" src="imagenes/raton.png" alt="Logo de la página web">
+                </div>
+                <div class="titulo">
+                    LoLstats
+                </div>
+                <form>
+                    <table>
+                        <tr>
+                            <td>
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                            </td>
+                            <td>
+                                <input type="text" name="apellidos" placeholder="Apellidos" required>
+                            </td>
+                        </tr>
+                    </table>
+                    <input type="text" name="nacimiento" placeholder="Fecha de Nacimiento" required>
+                    <input type="text" name="correo" placeholder="Correo electrónico" required>
+                    <input type="password" name="contraseña" placeholder="Contraseña" required>
+                    <input type="password" name="rep_contraseña" placeholder="Repetir contraseña" required>
+                    <img class="captcha" src="imagenes/captcha.png" alt="Captcha">
+                    <input type="checkbox" required>
+                    <button type="submit" title="Registrar">REGISTRAR</button>
+                </form>
+                <div class="pieform">
+                    <p>¿Estás registrado? Pincha <a href="login.html">aquí</a>.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
