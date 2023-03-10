@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="imagenes/favicon.ico"> <!-- ENTREGA 4 -->
 </head>
 
 <body class="body-index">
@@ -179,19 +180,27 @@
         </div>
     </main>
     <footer>
-        <div>
+        <div class="info">
             <p>Copyright &copy; 2023 LoLstats</p>
             <a href="#">Discord</a>
             <a href="#">FAQ</a>
             <a href="#">Sobre nosotros</a>
-            <a href="#">Contacto</a>
+            <a href="#" id="show-modal" onclick="document.getElementById('dialogo').showModal()">Contacto</a> <!-- ENTREGA 4 -->
             <a href="#">Sugerencias</a>
             <a href="#">Términos y condiciones</a>
         </div>
         <div class="logo-runas">
-            <img src="imagenes/raton.png" alt="Logo de la página web">
+            <img src="imagenes/logotipo.svg" alt="Logo de la página web">
             <p>LoLstats</p>
         </div>
+        <dialog id="dialogo"> <!-- ENTREGA 4 -->
+            <p>
+                Información de contacto: <br>
+                - Discord: cotan#8773 <br>
+                - Correo: joseluis.cotan@iesdonana.org
+            </p>
+            <button onclick="document.getElementById('dialogo').close()">Volver a la página</button>
+        </dialog>
     </footer>
     <script src="runas.js"></script>
 </body>
