@@ -228,6 +228,9 @@
   position: fixed;
   top: 30%;
   left: 3%;
+  animation-name: logo; /* ENTREGA 4 */
+  animation-duration: 2s; /* ENTREGA 4 */
+  animation-iteration-count: 1; /* ENTREGA 4 */
 }
 
 .logo,
@@ -241,6 +244,9 @@
   margin-bottom: 20px;
   margin-right: 30px;
   text-align: center;
+  animation-name: logo; /* ENTREGA 4 */
+  animation-duration: 2s; /* ENTREGA 4 */
+  animation-iteration-count: 1; /* ENTREGA 4 */
 }
 
 .logo img,
@@ -259,6 +265,7 @@
   font-family: 'Irish Grover';
   font-size: 35px;
 }
+
 
 footer {
   color: white;
@@ -286,6 +293,9 @@ footer a {
   position: fixed;
   top: 30%;
   left: -5%;
+  animation-name: logo; /* ENTREGA 4 */
+  animation-duration: 2s; /* ENTREGA 4 */
+  animation-iteration-count: 1; /* ENTREGA 4 */
 }
 
 .input-campeones {
@@ -335,6 +345,9 @@ OBJETOS
   height: 800px;
   top: 25%;
   left: -1%;
+  animation-name: logo; /* ENTREGA 4 */
+  animation-duration: 2s; /* ENTREGA 4 */
+  animation-iteration-count: 1; /* ENTREGA 4 */
 }
 
 .iniciales,
@@ -383,12 +396,18 @@ OBJETOS
   margin: 10px;
 }
 
+
 .tipos-objetos a {
   margin: 0 10px;
+  transition: all 0.2s ease-in-out;
+  /* ENTREGA 4*/
 }
+
 
 .tipos-objetos a:hover {
   cursor: pointer;
+  color: rgb(255, 255, 255);
+  /* ENTREGA 4*/
 }
 
 .objetos img:hover {
@@ -406,6 +425,9 @@ RUNAS
   height: 700px;
   position: fixed;
   top: 30%;
+  animation-name: logo; /* ENTREGA 4 */
+  animation-duration: 2s; /* ENTREGA 4 */
+  animation-iteration-count: 1; /* ENTREGA 4 */
 }
 
 table {
@@ -474,8 +496,14 @@ MEDIA QUERY
     bottom: 100%;
     left: 0;
     position: absolute;
+    opacity: 0;
+    opacity: 0;
+    animation-name: logo; /* ENTREGA 4 */
+    animation-duration: 3s; /* ENTREGA 4 */
+    animation-iteration-count: 1; /* ENTREGA 4 */
   }
 
+  .logo,
   .logo-campeones,
   .logo-objetos,
   .logo-runas {
@@ -528,4 +556,89 @@ MEDIA QUERY
     margin: 0;
   }
 
+}
+
+/*
+* ENTREGA 4
+*/
+
+@keyframes logo {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.info a {
+  transition: all 0.2s ease-in-out;
+}
+
+.info a:hover {
+  color: #111110;
+}
+
+.runas {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.runas img:hover {
+  transform: scale(1.1);
+}
+
+.logo-gif {
+  width: 150px;
+  height: 150px;
+}
+
+details {
+  position: absolute;
+  font-weight:bolder;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+dialog {
+  border: 3px solid black;
+  border-radius: 30px;
+  background-color: white;
+}
+
+dialog p {
+  font-size: 24px;
+  font-weight:bolder;
+}
+
+dialog button {
+  background-color: gray;
+  color: white;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.video1 {
+  position: fixed;
+  top: 30%;
+  left: 75%;
+  width: 20%;
+  height: 20%;
+}
+
+.video2 {
+  position: fixed;
+  top: 55%;
+  left: 75%;
+  width: 20%;
+  height: 20%;
+}
+
+#video-fondo {
+  filter: opacity(0.5);
 }
